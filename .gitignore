@@ -1,0 +1,19 @@
+# build artifacts
+*.o
+*.so
+scour
+
+# runtime output
+*.jsonl
+*.log
+out.txt
+
+# editor / OS cruft
+*.swp
+*~
+.DS_Store
+
+# CI workflow is kept out of git because pushing files under .github/workflows/
+# needs a Personal Access Token with the 'workflow' scope. Add it via the GitHub
+# web UI (Actions tab), or delete this line once your token has that scope.
+.github/workflows/
